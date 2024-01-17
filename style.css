@@ -1,0 +1,134 @@
+:root{
+  --bg-color: #23262F;
+  --primary-color: #FA8C05;
+  --secondary-color: #393C45;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-cinzel: 'Cinzel', sans-serif;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-montserrat);
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+
+/* GERAL */
+
+a{
+  font-size: 1.6rem;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* 
+  MENU LATERAL 
+*/
+nav#menu-lateral{
+  background: linear-gradient(90deg, var(--secondary-color) 0%, var(--bg-color) 92%) no-repeat;
+  position: fixed;
+  left: 0;
+  top: 0;
+  
+  height: 100vh;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  
+}
+ul li.item-menu{
+  line-height: 20px;
+}
+ul li.item-menu a{
+  /* background-color: #fa8c056c; */
+  display: flex;
+  padding: 20px;
+}
+
+/* header menu */
+div#header-menu{
+  padding: 30px 40px 45px 8px;
+}
+div#header-menu span.txt-header{
+  font-size: 3.2rem;
+  font-family: var(--font-cinzel);
+  color: var(--primary-color);
+  margin-left: 20px;
+}
+
+/* icon menu */
+li.item-menu a  span.icon-menu{
+  position: relative;
+  bottom: 10px;
+}
+
+/* texto menu */
+li.item-menu a  span.txt-menu{
+  margin-left: 10px;
+}
+li.item-menu{
+  list-style-type: none;
+}
+
+/* registro menu */
+li#registro-menu{
+  background-color: var(--secondary-color);
+  width: 260px;
+  height: 148px;
+  border-radius: 26px;
+}
+button.btn-registro{
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  border-radius: 22px;
+  border-color: transparent;
+
+  display: flex;
+  width: 225px;
+  height: 67px;
+
+  /* transform: translateX(-50%, -50%); */
+  left: 20px;
+  top: 20px;
+  
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+}
+span#span-registro{
+  position: relative;
+  right: 25px;
+  font-size: 4.6rem;
+}
+
+/* div de Logout */
+li#logout-menu{
+  background-color: var(--secondary-color);
+  border-radius: 22px;
+  width: 180px;
+  /* height: 80px; */
+  padding: 8px 5px;
+
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+
+  margin-top: 50px;
+}
+li#logout-menu a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
