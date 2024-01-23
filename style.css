@@ -31,7 +31,7 @@ a{
 /* 
   MENU LATERAL 
 */
-nav#menu-lateral{
+nav#sidebar{
   background: linear-gradient(90deg, var(--secondary-color) 0%, var(--bg-color) 92%) no-repeat;
   position: fixed;
   left: 0;
@@ -43,48 +43,48 @@ nav#menu-lateral{
   padding: 20px;
   
 }
-ul li.item-menu{
+ul li.sidebar-item{
   line-height: 20px;
 }
-ul li.item-menu a{
+ul li.sidebar-item a{
   /* background-color: #fa8c056c; */
   display: flex;
   padding: 20px;
 }
 
 /* header menu */
-div#header-menu{
+div#logo{
   padding: 30px 40px 45px 8px;
 }
-div#header-menu span.txt-header{
+div#logo span.logo__text{
   font-size: 3.2rem;
   font-family: var(--font-cinzel);
   color: var(--primary-color);
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 /* icon menu */
-li.item-menu a  span.icon-menu{
+li.sidebar-item a  span.sidebar-item__img{
   position: relative;
   bottom: 10px;
 }
 
 /* texto menu */
-li.item-menu a  span.txt-menu{
+li.sidebar-item a  span.sidebar-item__text{
   margin-left: 10px;
 }
-li.item-menu{
+li.sidebar-item{
   list-style-type: none;
 }
 
 /* registro menu */
-li#registro-menu{
+li#sidebar-registro{
   background-color: var(--secondary-color);
   width: 260px;
   height: 148px;
   border-radius: 26px;
 }
-button.btn-registro{
+button.sidebar-registro__button{
   background-color: var(--primary-color);
   color: whitesmoke;
   border-radius: 22px;
@@ -104,14 +104,14 @@ button.btn-registro{
   align-content: center;
   flex-direction: column;
 }
-span#span-registro{
+span#sidebar-registro__span{
   position: relative;
   right: 25px;
   font-size: 4.6rem;
 }
 
 /* div de Logout */
-li#logout-menu{
+li#sidebar-sair{
   background-color: var(--secondary-color);
   border-radius: 22px;
   width: 180px;
@@ -125,10 +125,46 @@ li#logout-menu{
 
   margin-top: 50px;
 }
-li#logout-menu a{
+li#sidebar-sair a{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
+}
+
+main{
+  width: calc(100vw - 300px);
+  height: inherit;
+  margin-left: 300px;
+  padding-top: 60px;
+  padding-right: 80px;
+}
+/* AREA DE APRESENTAÇÃO */
+section#main-apresentacao{
+  background-color: var(--secondary-color);
+  font-family: var(--font-montserrat);
+  border-radius: 26px;
+  float: right;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1050px;
+  height: 180px;
+  /* margin-top: 60px; */
+  padding: 0 0 0 30px;
+  gap: 200px;
+}
+div#main-apresentacao__text h2{
+  color: var(--primary-color);
+  font-size: 4.8rem;
+}
+div#main-apresentacao__text p{
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 5px;
 }
