@@ -1,0 +1,40 @@
+/* MAIN */
+main{
+  width: calc(100vw - 300px);
+  height: inherit;
+  margin-left: 300px;
+  padding-top: 60px;
+  padding-right: 80px;
+}
+
+/* AREA DE APRESENTAÇÃO */
+section#apresentacao{
+  background-color: var(--secondary-color);
+  font-family: var(--font-montserrat);
+  border-radius: 26px;
+  float: right;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  max-width: 1250px;
+  height: 180px;
+  padding-right: 30px;
+  gap: 200px;
+}
+
+div#apresentacao__text h2{
+  color: var(--primary-color);
+  font-size: 4.8rem;
+}
+div#apresentacao__text p{
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 5px;
+}
+
