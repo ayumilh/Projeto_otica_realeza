@@ -9,6 +9,7 @@ main{
 
 /* AREA DE APRESENTAÇÃO */
 section#apresentacao{
+  position: relative;
   background-color: var(--secondary-color);
   font-family: var(--font-montserrat);
   border-radius: 26px;
@@ -17,7 +18,7 @@ section#apresentacao{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
+  width: 75vw;
   max-width: 1250px;
   height: 180px;
   padding-right: 30px;
