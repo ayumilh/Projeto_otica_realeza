@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,37 +94,55 @@
     </section>
 
     <div id="table">
-      <table>
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Endereço</th>
-            <th>Bairro</th>
-            <th>Telefone</th>
-            <th>Local</th>
-            <th>CPF</th>
-          </tr>
-        </thead>
-  
-        <tbody>
-          <tr>
-            <td>Maria Silva</td>
-            <td>Rua das Flores, 123</td>
-            <td>Jardim Botânico</td>
-            <td>(11) 98765-4321</td>
-            <td>São Paulo</td>
-            <td>111.222.333-44</td>
-          </tr>
-          <tr>
-            <td>João Santos</td>
-            <td>Avenida Paulista, 456</td>
-            <td>Bela Vista</td>
-            <td>(11) 87654-3210</td>
-            <td>São Paulo</td>
-            <td>555.666.777-88</td>
-          </tr>
-        </tbody>
-      </table>
+      <?php
+        include("src/php/connect.php");
+
+        $query_cliente   = "SELECT * FROM cliente";
+        $result_cliente = $conn->query($query_cliente);
+
+        if($result_cliente->num_rows){
+          echo "
+            <table>
+            <thead>
+              <tr>
+              <th>Número da OS</th>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Endereço</th>
+              <th>Bairro</th>
+              <th>Telefone</th>
+              <th>Atendimento Local</th>
+            </tr>
+            </thead>
+          ";
+
+          while($row = $result_cliente->fetch_assoc()){
+            $num_os = $row["num_os"];
+            $nome = $row["nome"];
+            $cpf = $row["cpf"];
+            $endereco = $row["endereco"];
+            $bairro = $row["bairro"];
+            $telefone = $row["telefone"];
+            $atendimento_local = $row["atendimento_local"];
+            echo '
+              <tbody>
+                <tr>
+                  <td>'. $num_os .'</td>
+                  <td>'. $nome .'</td>
+                  <td>'. $cpf .'</td>
+                  <td>'. $endereco .'</td>
+                  <td>'. $bairro .'</td>
+                  <td>'. $telefone .'</td>
+                  <td>'. $atendimento_local .'</td>
+              </tr>
+              </tbody>
+            ';
+          };
+          echo "</table>";
+        }else{
+          echo "0 resultados";
+        }
+      ?>
     </div>
   </main>
 </body>
