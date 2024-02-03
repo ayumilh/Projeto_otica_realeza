@@ -4,21 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/styles/vars.css">
-  <link rel="stylesheet" href="src/styles/sidebar.css">
-  <link rel="stylesheet" href="src/styles/main-content.css">
-  <link rel="stylesheet" href="src/styles/tabelas.css">
-  <title>Dashboard</title>
+  <link rel="shortcut icon" href="../../../public/img/Logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../../../public/styles/reseat.css">
+  <link rel="stylesheet" href="../../../public/styles/vars.css">
+  <link rel="stylesheet" href="../../../public/styles/sidebar.css">
+  <link rel="stylesheet" href="../../../public/styles/main-content.css">
+  <link rel="stylesheet" href="../../../public/styles/tabelas.css">
+  <title>Assistencias</title>
 </head>
 <body>
   <nav id="sidebar">
     <div id="logo">
       <span class="logo__img">
-        <img src="src/img/Logo.svg" alt="Logo">
+        <img src="../../../public/img/Logo.svg" alt="Logo">
       </span>
       <span class="logo__text">
         Realeza
@@ -27,36 +25,36 @@
 
     <ul>
       <li class="sidebar-item">
-        <a href="#">
-          <span class="sidebar-item__img"><img src="src/img/menu/User.svg" alt="Icone de Clientes"></span>
+        <a href="./clientes.php">
+          <span class="sidebar-item__img"><img src="../../../public/img/menu/User.svg" alt="Icone de Clientes"></span>
           <span class="sidebar-item__text">Clientes</span>
         </a>
       </li>
 
       <li class="sidebar-item">
-        <a href="#">
-          <span class="sidebar-item__img"><img src="src/img/menu/Price.svg" alt="Icone de Vendas" width="36" height="36"></span>
+        <a href="./vendas.php">
+          <span class="sidebar-item__img"><img src="../../../public/img/menu/Price.svg" alt="Icone de Vendas" width="36" height="36"></span>
           <span class="sidebar-item__text">Vendas</span>
         </a>
       </li>
 
       <li class="sidebar-item">
-        <a href="#">
-          <span class="sidebar-item__img"><img src="src/img/menu/Service.svg" alt="Icone de Atendimento"></span>
+        <a href="./atendimentos.php">
+          <span class="sidebar-item__img"><img src="../../../public/img/menu/Service.svg" alt="Icone de Atendimento"></span>
           <span class="sidebar-item__text">Atendimento</span>
         </a>
       </li>
 
       <li class="sidebar-item">
-        <a href="#">
-          <span class="sidebar-item__img"><img src="src/img/menu/Gear.svg" alt="Icone de Oculos"></span>
+        <a href="./oculos.php">
+          <span class="sidebar-item__img"><img src="../../../public/img/menu/Gear.svg" alt="Icone de Oculos"></span>
           <span class="sidebar-item__text">Oculos</span>
         </a>
       </li>
       
       <li class="sidebar-item">
-        <a href="#">
-          <span class="sidebar-item__img"><img src="src/img/menu/Help.svg" alt="Icone de Assistencias"></span>
+        <a href="./assistencias.php">
+          <span class="sidebar-item__img"><img src="../../../public/img/menu/Help.svg" alt="Icone de Assistencias"></span>
           <span class="sidebar-item__text">Assistencia</span>
         </a>
       </li>
@@ -75,7 +73,7 @@
       <!-- Logout -->
       <li id="sidebar-sair">
         <a href="#">
-          <img src="src/img/menu/Logout.svg" alt="Icone de sair">
+          <img src="../../../public/img/menu/Logout.svg" alt="Icone de sair">
           Sair
         </a>
       </li>
@@ -89,15 +87,15 @@
         <p>Deus é fiel!</p>
       </div>
       <div id="apresentacao__img">
-        <img src="src/img/Woman-analytics-interface.svg" alt="">
+        <img src="../../../public/img/Woman-analytics-interface.svg" alt="">
       </div>
     </section>
 
     <div id="table">
       <?php
-        include("src/php/connect.php");
+        include("../../../config/connect.php");
 
-        $query_cliente   = "SELECT * FROM cliente";
+        $query_cliente   = "SELECT * FROM assistencia";
         $result_cliente = $conn->query($query_cliente);
 
         if($result_cliente->num_rows){
