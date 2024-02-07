@@ -9,25 +9,29 @@ main{
 
 /* AREA DE APRESENTAÇÃO */
 section#apresentacao{
-  position: relative;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 24px rgb(224, 130, 45, 30%);
   font-family: var(--font-montserrat);
   border-radius: 26px;
+
+  position: relative;
+  width: 75vw;
+  max-width: 1250px;
+  height: 180px;
   float: right;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 75vw;
-  max-width: 1250px;
-  height: 180px;
-  padding-right: 30px;
   gap: 200px;
+  padding-right: 30px;
+  font-family: var(--font-montserrat-alter);
 }
 
 div#apresentacao__text h2{
-  color: var(--primary-color);
+  color: #fff;
   font-size: 4.8rem;
+  font-weight: 600;
 }
 div#apresentacao__text p{
   color: #fff;
