@@ -1,3 +1,6 @@
+<?php
+include("php/connect.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,37 +96,43 @@
     </section>
 
     <div id="table">
-      <table>
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Endereço</th>
-            <th>Bairro</th>
-            <th>Telefone</th>
-            <th>Local</th>
-            <th>CPF</th>
-          </tr>
-        </thead>
-  
-        <tbody>
-          <tr>
-            <td>Maria Silva</td>
-            <td>Rua das Flores, 123</td>
-            <td>Jardim Botânico</td>
-            <td>(11) 98765-4321</td>
-            <td>São Paulo</td>
-            <td>111.222.333-44</td>
-          </tr>
-          <tr>
-            <td>João Santos</td>
-            <td>Avenida Paulista, 456</td>
-            <td>Bela Vista</td>
-            <td>(11) 87654-3210</td>
-            <td>São Paulo</td>
-            <td>555.666.777-88</td>
-          </tr>
-        </tbody>
-      </table>
+      <?php
+        $sql    = "SELECT * FROM clientes";
+        $result = $conn->query($sql);
+        if($result->num_rows){
+          echo "
+            <table>
+            <;thead>
+              <tr>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Bairro</th>
+                <th>Telefone</th>
+                <th>Local</th>
+                <th>CPF</th>
+              </tr>
+            </thead>
+          ";
+
+          while($row = $result){
+            echo "
+              <tbody>
+                <tr>
+                  <td>João Santos</td>
+                  <td>Avenida Paulista, 456</td>
+                  <td>Bela Vista</td>
+                  <td>(11) 87654-3210</td>
+                  <td>São Paulo</td>
+                  <td>555.666.777-88</td>
+                </tr>
+              </tbody>
+            ";
+          };
+          echo "</table>";
+        }else{
+          echo "0 resultados";
+        }
+      ?>
     </div>
   </main>
 </body>
