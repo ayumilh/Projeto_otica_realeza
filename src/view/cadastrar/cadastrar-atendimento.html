@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../public/styles/reseat.css">
+  <link rel="stylesheet" href="../../../public/styles/vars.css">
+  <link rel="stylesheet" href="../../../public/styles/formulario.css">
+  <title>Cadastrar atendimento</title>
+</head>
+<body>
+  <div id="form-container">
+    <h4>Cadastrar atendimento</h4>
+    <form method="POST" action="../../modal/cadastrar/cadastrar-atendimento.php">
+      <div class="field">
+        <img src="../../../public/img/icones/Service.svg" class="input-icon" alt="">
+        <input type="text" placeholder="Local de atendimento" id="atendimento_local" class="input-field" name="atendimento_local" required><br>
+      </div>
+      <div class="field">
+        <img src="../../../public/img/icones/Neighborhood.svg" class="input-icon" alt="">
+        <input type="text" placeholder="Bairro" id="bairro" class="input-field" name="bairro" required><br>
+      </div>
+      <div class="field">
+        <img src="../../../public/img/icones/Calendar.svg" class="input-icon" alt="">
+        <input type="date" placeholder="Data" id="data" class="input-field" name="data" required><br>
+      </div>
+      <div class="field">
+        <img src="../../../public/img/icones/simb-opto.svg" class="input-icon" alt="">
+        <input type="text" placeholder="Optometrista" id="opto" class="input-field" name="opto" required><br>
+      </div>
+      <div class="field">
+        <img src="../../../public/img/icones/Money-Bag.svg" class="input-icon" alt="">
+        <input type="number" placeholder="Valor total" id="valor_total" class="input-field" name="valor_total" required><br>
+      </div>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
