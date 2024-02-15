@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../public/styles/reseat.css">
+  <link rel="stylesheet" href="../../../public/styles/vars.css">
+  <link rel="stylesheet" href="../../../public/styles/formulario.css">
+  <title>Cadastrar cliente</title>
+</head>
+<body>
+  <div id="form-container">
+    <h4>Cadastrar cliente</h4>
+    <form method="POST" action="../../modal/cadastrar/cadastrar-cliente.php">
+        <div class="field">
+          <img src="../../../public/img/icones/OrderOS.svg" alt="">
+          <input type="text" placeholder="Numero do OS" id="num_os" class="input-field" name="num_os" required><br>
+        </div>
+        <div class="field">
+          <img src="../../../public/img/icones/Username.svg" class="input-icon" alt="">
+          <input type="text" placeholder="Nome" id="nome" class="input-field" name="nome" required><br>
+        </div>
+        <div class="field">
+          <img src="../../../public/img/icones/Calendar.svg" class="input-icon" alt="">
+          <input type="text" placeholder="CPF" id="cpf" class="input-field" name="cpf" required><br>
+        </div>
+        <div class="field">
+          <img src="../../../public/img/icones/Neighborhood.svg" class="input-icon" alt="">
+          <input type="text" placeholder="Endereco" id="endereco" class="input-field" name="endereco" required><br>
+        </div>
+        <div class="field">
+          <img src="../../../public/img/icones/Neighborhood.svg" class="input-icon" alt="">
+          <input type="text" placeholder="Bairro" id="bairro" class="input-field" name="bairro" required><br>
+        </div>
+        <div class="field">
+          <img src="../../../public/img/icones/Phone.svg" class="input-icon" alt="">
+          <input type="text" placeholder="Telefone" id="telefone" class="input-field" name="telefone" required><br>
+        </div>
+        <div class="field">
+          <img src="../../../public/img/icones/Service.svg" class="input-icon" alt="">
+          <input type="text" placeholder="Local de atendimento" id="atendimento_local" class="input-field" name="atendimento_local" required><br>
+        </div>
+        <button class="btn" type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>

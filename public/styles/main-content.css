@@ -1,0 +1,144 @@
+/* MAIN */
+main{
+  width: calc(100vw - 300px);
+  height: inherit;
+  margin-left: 300px;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+/* HEADER */
+header{
+  width: inherit;
+  height: 80px;
+  padding: 30px 40px 90px 40px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+div#notif-btn-registro{
+  display: flex;
+  gap: 30px;
+}
+button.header-registro__button{
+  box-shadow: 0 4px 24px rgb(224, 130, 45, 30%);
+  background-color: var(--primary-color);
+  border: 0;
+  border-radius: 48px;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+}
+span#header-registro__span{
+  font-size: 2rem;
+  margin-right: 4px;
+}
+
+div#search{
+  background-color: var(--secondary-color);
+  border-radius: 48px;
+  
+  width: 250px;
+  display: flex;
+  padding: 10px 20px;
+}
+
+div#search-content{
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+div#search-content input{
+  color: var(--txt-opaco);
+  font-size: 1rem;
+  font-weight: 600;
+
+  background-color: var(--secondary-color);
+  border: 0;
+  width: 170px;
+  height: 25px;
+  margin-left: 2px;
+}
+div#search-content input:focus{
+  outline: none;
+}
+
+/* AREA DE APRESENTAÇÃO */
+section#apresentacao{
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 24px rgb(224, 130, 45, 30%);
+  font-family: var(--font-montserrat);
+  border-radius: 26px;
+
+  position: relative;
+  width: 75vw;
+  max-width: 1250px;
+  height: 180px;
+  float: right;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 200px;
+  padding-right: 30px;
+  font-family: var(--font-montserrat-alter);
+}
+
+div#apresentacao__text h2{
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+div#apresentacao__text p{
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 5px;
+}
+
+/* SEGESTÕES */
+section#sugestoes{
+  position: relative;
+  /* bottom: 80px; */
+  width: 600px;
+  height: 320px;
+}
+section#sugestoes span{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--txt-segundaria);
+}
+div#sugestoes-list{
+  /* background-color: rgba(137, 43, 226, 0.417); */
+  padding: 12px 20px;
+}
+.sugestoes-list__content{
+  gap: 15px;
+}
+div#sugestoes-list div{
+  color: var(--txt-principal);
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ATENDIMENTO RECENTES */
+aside{
+
+}

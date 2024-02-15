@@ -1,0 +1,28 @@
+div#table table{
+  position: relative;
+}
+table {
+  position: relative;
+  table-layout: fixed;
+  width: 75vw;
+  max-width: inherit;
+  top: 60px;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+thead{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+tbody{
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
