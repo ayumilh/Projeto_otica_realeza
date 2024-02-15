@@ -3,8 +3,74 @@ main{
   width: calc(100vw - 300px);
   height: inherit;
   margin-left: 300px;
-  padding-top: 60px;
-  padding-right: 80px;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+/* HEADER */
+header{
+  width: inherit;
+  height: 80px;
+  padding: 30px 40px 90px 40px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+div#notif-btn-registro{
+  display: flex;
+  gap: 30px;
+}
+button.header-registro__button{
+  box-shadow: 0 4px 24px rgb(224, 130, 45, 30%);
+  background-color: var(--primary-color);
+  border: 0;
+  border-radius: 48px;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+}
+span#header-registro__span{
+  font-size: 2rem;
+  margin-right: 4px;
+}
+
+div#search{
+  background-color: var(--secondary-color);
+  border-radius: 48px;
+  
+  width: 250px;
+  display: flex;
+  padding: 10px 20px;
+}
+
+div#search-content{
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+div#search-content input{
+  color: var(--txt-opaco);
+  font-size: 1rem;
+  font-weight: 600;
+
+  background-color: var(--secondary-color);
+  border: 0;
+  width: 170px;
+  height: 25px;
+  margin-left: 2px;
+}
+div#search-content input:focus{
+  outline: none;
 }
 
 /* AREA DE APRESENTAÇÃO */
@@ -43,3 +109,36 @@ div#apresentacao__text p{
   margin-top: 5px;
 }
 
+/* SEGESTÕES */
+section#sugestoes{
+  position: relative;
+  /* bottom: 80px; */
+  width: 600px;
+  height: 320px;
+}
+section#sugestoes span{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--txt-segundaria);
+}
+div#sugestoes-list{
+  /* background-color: rgba(137, 43, 226, 0.417); */
+  padding: 12px 20px;
+}
+.sugestoes-list__content{
+  gap: 15px;
+}
+div#sugestoes-list div{
+  color: var(--txt-principal);
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ATENDIMENTO RECENTES */
+aside{
+
+}

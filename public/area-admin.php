@@ -86,15 +86,65 @@
   </nav>
 
   <main>
+    <header>
+      <div id="notif-btn-registro">
+        <img src="img/icones/Notification.svg" alt="">
+        <button class="header-registro__button">
+          <span id="header-registro__span">+</span>
+          <p>Novo Registro</p>
+        </button>
+      </div>
+      <div id="search">
+        <div id="search-content">
+          <input type="text" name="inp-buscar" placeholder="O que você procura?">
+          <label for="inp-buscar"><img src="img/icones/Search.svg" alt=""></label>
+        </div>
+      </div>
+    </header>
+
     <section id="apresentacao">
       <div id="apresentacao__text">
         <h2>Olá Milena! 👑</h2>
         <p>Deus é fiel!</p>
       </div>
       <div id="apresentacao__img">
-        <img src="./img/Woman-analytics-interface.svg" alt="">
+        <img src="./img/main/Woman-analytics-interface.svg" alt="">
       </div>
     </section>
+
+    <section id="sugestoes">
+      <span>Sugestões</span>
+      <div id="sugestoes-list">
+        <div>
+          <div class="sugestoes-list__content">
+            <img src="img/main/status-venda.svg" alt="">
+            <p>Acompanhar status de vendas</p>
+          </div>
+          <img src="img/icones/right.svg" alt="">
+        </div>
+
+        <div>
+          <div class="sugestoes-list__content">
+            <img src="img/main/folha-os.svg" alt="">
+            <p>Acessar folha de OS</p>
+          </div>
+          <img src="img/icones/right.svg" alt="">
+        </div>
+
+        <div>
+          <div class="sugestoes-list__content">
+            <img src="img/main/relatorio.svg" alt="">
+            <p>Relatorio de vendas</p>
+          </div>
+          <img src="img/icones/right.svg" alt="">
+        </div>
+        
+      </div>
+    </section>
+
+    <aside id="atendimento-recente">
+
+    </aside>
   </main>
 </body>
 </html>
